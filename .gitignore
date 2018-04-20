@@ -33,3 +33,5 @@ vignettes/*.pdf
 *.knit.md
 
 .idea
+venv
+*.pyc

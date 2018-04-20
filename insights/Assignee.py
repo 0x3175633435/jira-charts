@@ -19,7 +19,8 @@ def organize(list):
                 dictionary[type] = float(points) + dictionary[type]
 
     path = os.path.dirname(os.path.realpath(__file__))
-    with open( path + "\\..\\ext\\R\\datasets\\assigneeWorkload.csv", 'w') as f:
+    path = os.path.join(path, "..", "ext", "R", "datasets", "assigneeWorkload.csv")
+    with open(path, 'w') as f:
         file = csv.DictWriter(f, dictionary.keys())
         file.writeheader()
         file.writerow(dictionary)
