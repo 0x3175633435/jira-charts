@@ -1,7 +1,7 @@
 library('reshape')
 
 # Faz a leitura do CSV fornecido pelo python
-dir <- paste(dirname(sys.frame(1)$ofile), '/../datasets/assigneeWorkload.csv', sep = '')
+dir <- paste(getwd(), '/ext/R/datasets/assigneeWorkload.csv', sep = '')
 csv <- read.csv(dir)
 cht <- melt(csv)
 
