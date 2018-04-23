@@ -36,3 +36,4 @@ vignettes/*.pdf
 venv
 *.pyc
 .Rproj.user
+__pycache__
